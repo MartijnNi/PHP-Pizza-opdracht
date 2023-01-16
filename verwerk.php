@@ -36,8 +36,7 @@ echo ("Uw gekozen tijd: $tijd <br><br>");
 
 $option=$_POST['Option'];
 echo ("Uw gekozen voor: $option<br><br>");
-//datum
-$today=date("l");
+
 //zet variabel van de prijs
 $margherita_Price="12.50";
 $funghi_Price="12.50";
@@ -93,6 +92,9 @@ if ($Formaggi === 0){
     echo    ("Formaggi: $Formaggi stuks. <br>
     Totaal: €$total_price_5 <br><br>");
 }
+
+//datum
+$today=date("l");
 
 if ($today == "Monday" && "Friday") {
     $totaal_eind=$total_price_1+$total_price_2+$total_price_3+$total_price_4+$total_price_5;
